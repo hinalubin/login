@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login/login.dart';
 
 class page2 extends StatelessWidget {
   const page2({super.key});
@@ -80,7 +81,7 @@ class page2 extends StatelessWidget {
                       style: TextStyle(color: Colors.white, fontSize: 15),
                     ),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Colors.blue,side: BorderSide(color: Colors.black)
                     ),
                   ),
                 ),
@@ -90,7 +91,7 @@ class page2 extends StatelessWidget {
                   children: [
                     Text("Already have an account?"),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>page3(),));},
                       child: Text(
                         "Login",
                         style: TextStyle(color: Colors.black),

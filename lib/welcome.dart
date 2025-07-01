@@ -63,7 +63,7 @@ class page1 extends StatelessWidget {
                     "Sign up",
                     style: TextStyle(color: Colors.white, fontSize: 15),
                   ),
-                  style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.blue,side: BorderSide(color: Colors.black)),
                 ),
               ),
             ],
