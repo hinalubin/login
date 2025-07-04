@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:login/login.dart';
 
-class page2 extends StatelessWidget {
+class page2 extends StatefulWidget {
   const page2({super.key});
+
+  @override
+  State<page2> createState() => _page2State();
+}
+
+class _page2State extends State<page2> {
+  TextEditingController nameController=TextEditingController();
+  TextEditingController emailController=TextEditingController();
+  TextEditingController passwordController=TextEditingController();
+  TextEditingController confirmController=TextEditingController();
 
   @override
   Widget build(BuildContext context) {
